@@ -1,0 +1,7 @@
+"'LogOut Screen' As screen":
+
+    cmp_SideNav_6 As cmp_SideNav:
+        Default: ="Log out"
+        Height: =768
+        Items: =colSideBarMenu
+

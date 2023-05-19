@@ -1,0 +1,7 @@
+"'AboutUs Screen' As screen":
+
+    cmp_SideNav_5 As cmp_SideNav:
+        Default: ="About"
+        Height: =768
+        Items: =colSideBarMenu
+

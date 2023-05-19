@@ -1,0 +1,170 @@
+"'AccountCreation Screen' As screen":
+    Fill: =RGBA(255, 255, 255, 1)
+
+    cmp_SideNav_2 As cmp_SideNav:
+        Default: ="Create"
+        Height: =768
+        Items: =colSideBarMenu
+
+    Label1 As label:
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Semibold
+        Height: =57
+        Size: =20
+        Text: ="Username"
+        Width: =235
+        X: =752
+        Y: =272
+        ZIndex: =2
+
+    username As text:
+        Default: =""
+        Font: =Font.Lato
+        Height: =62
+        HintText: =" "
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =15
+        Width: =475
+        X: =752
+        Y: =329
+        ZIndex: =3
+
+    Label2 As label:
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Semibold
+        Height: =57
+        Size: =20
+        Text: ="Email"
+        Width: =185
+        X: =189
+        Y: =272
+        ZIndex: =4
+
+    email As text:
+        Default: =""
+        Font: =Font.Lato
+        Height: =62
+        HintText: =""
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =15
+        Width: =468
+        X: =189
+        Y: =329
+        ZIndex: =5
+
+    Label3 As label:
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Semibold
+        Height: =62
+        Size: =20
+        Text: ="Password"
+        Width: =202
+        X: =189
+        Y: =412
+        ZIndex: =6
+
+    password As text:
+        Default: =""
+        Font: =Font.Lato
+        Height: =55
+        HintText: =""
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =15
+        Width: =462
+        X: =195
+        Y: =474
+        ZIndex: =7
+
+    Button1 As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =60
+        OnSelect: |-
+            =If(
+                IsBlank(firstname.Text) || IsBlank(lastname.Text) || IsBlank(email.Text) || IsBlank(username.Text) || IsBlank(password.Text),
+                Notify("Please fill in all the fields.", NotificationType.Error),
+                If(
+                    CountRows(Filter(Table1, Username = username.Text)) > 0,
+                    Notify("Username already exists. Please choose a different username.", NotificationType.Error),
+                    Patch(Table1, Defaults(Table1), {Firstname: firstname.Text, Lastname: lastname.Text, Username: username.Text, Email: email.Text, Password: password.Text})
+                )
+            )
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =30
+        Text: ="Create Account"
+        Width: =345
+        X: =566
+        Y: =580
+        ZIndex: =8
+
+    Label7 As label:
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Semibold
+        Height: =65
+        Size: =30
+        Text: ="Create Account"
+        Width: =355
+        X: =529
+        Y: =46
+        ZIndex: =9
+
+    Label8 As label:
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Semibold
+        Height: =52
+        Size: =20
+        Text: ="First Name"
+        Width: =200
+        X: =189
+        Y: =135
+        ZIndex: =10
+
+    firstname As text:
+        Default: =""
+        Font: =Font.Lato
+        Height: =52
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =15
+        Width: =468
+        X: =189
+        Y: =202
+        ZIndex: =11
+
+    Label9 As label:
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Semibold
+        Size: =20
+        Text: ="Last Name"
+        Width: =200
+        X: =752
+        Y: =147
+        ZIndex: =12
+
+    lastname As text:
+        Default: =""
+        Font: =Font.Lato
+        Height: =52
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =15
+        Width: =475
+        X: =752
+        Y: =202
+        ZIndex: =13
+

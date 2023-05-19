@@ -1,0 +1,7 @@
+MainScreen As screen:
+
+    cmp_SideNav_1 As cmp_SideNav:
+        Default: ="Main Page"
+        Height: =768
+        Items: =colSideBarMenu
+
