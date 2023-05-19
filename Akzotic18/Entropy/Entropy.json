@@ -59,7 +59,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/19/2023 12:35:48",
+  "HeaderLastSavedDateTimeUTC": "05/19/2023 14:29:40",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "65900a3d-ea04-4b72-bd35-d676b25a119f": "\"/providers/microsoft.powerapps/apis/shared_excel/connections/2936f4c43d884965a5eb7e126942440e\"",
@@ -193,7 +193,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.3062509,
+    "AnalysisLoadTime": 0.2592901,
     "ControlCount": {
       "button": 3,
       "c09499c4771544f3b71e7441f5ec53a8": 7,
@@ -205,7 +205,7 @@
       "screen": 7,
       "text": 10
     },
-    "DeserializationLoadTime": 0.9206842
+    "DeserializationLoadTime": 1.3481572
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
