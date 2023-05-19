@@ -856,19 +856,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Login Screen'.Container2.Container4.TextInput3.AccessibleLabel"
+                  "fullyQualifiedName": "'Login Screen'.Container2.Container4.txtUsername_Login.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Login Screen'.Container2.Container4.TextInput3.AccessibleLabel",
+                  "fullyQualifiedName": "'Login Screen'.Container2.Container4.txtUsername_Login.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Login Screen",
-                "type": "'Login Screen'.Container2.Container4.TextInput3"
+                "type": "'Login Screen'.Container2.Container4.txtUsername_Login"
               }
             }
           ],
@@ -886,19 +886,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Login Screen'.Container2.Container4.TextInput4.AccessibleLabel"
+                  "fullyQualifiedName": "'Login Screen'.Container2.Container4.txtPassword_Login.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Login Screen'.Container2.Container4.TextInput4.AccessibleLabel",
+                  "fullyQualifiedName": "'Login Screen'.Container2.Container4.txtPassword_Login.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Login Screen",
-                "type": "'Login Screen'.Container2.Container4.TextInput4"
+                "type": "'Login Screen'.Container2.Container4.txtPassword_Login"
               }
             }
           ],

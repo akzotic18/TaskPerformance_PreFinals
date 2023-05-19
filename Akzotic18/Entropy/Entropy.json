@@ -53,13 +53,13 @@
     "password": 25,
     "PasswordUpdate Screen": 27,
     "ProfileInfoUpdate Screen": 36,
-    "TextInput3": 45,
-    "TextInput4": 46,
+    "txtPassword_Login": 46,
+    "txtUsername_Login": 45,
     "username": 23
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/19/2023 01:52:15",
+  "HeaderLastSavedDateTimeUTC": "05/19/2023 04:33:08",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "65900a3d-ea04-4b72-bd35-d676b25a119f": "\"/providers/microsoft.powerapps/apis/shared_excel/connections/2936f4c43d884965a5eb7e126942440e\"",
@@ -133,8 +133,8 @@
     "password": {},
     "PasswordUpdate Screen": {},
     "ProfileInfoUpdate Screen": {},
-    "TextInput3": {},
-    "TextInput4": {},
+    "txtPassword_Login": {},
+    "txtUsername_Login": {},
     "username": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
@@ -183,8 +183,8 @@
     "password": 17,
     "PasswordUpdate Screen": 0,
     "ProfileInfoUpdate Screen": 0,
-    "TextInput3": 2,
-    "TextInput4": 3,
+    "txtPassword_Login": 3,
+    "txtUsername_Login": 2,
     "username": 15
   },
   "ResourcesJsonIndices": {

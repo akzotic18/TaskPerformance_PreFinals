@@ -10,7 +10,9 @@ App As appinfo:
                 {Value:"About", Icon: Icon.Information, Screen:'AboutUs Screen'},
                 {Value:"Log out", Icon: Icon.Leave, Screen:'LogOut Screen'}
             )
-        )
+        );
+        
+        Collect(Table1, {Firstname: firstname.Text, Lastname: lastname.Text, Username: "admin", Email: email.Text, Password: "admin"})
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false

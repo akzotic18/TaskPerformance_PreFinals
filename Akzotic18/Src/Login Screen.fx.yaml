@@ -16,13 +16,13 @@
             Y: =60
             ZIndex: =1
 
-            TextInput3 As text:
-                Default: =""
+            txtUsername_Login As text:
+                Default: =
                 HintText: ="Username"
                 Size: =
                 ZIndex: =1
 
-            TextInput4 As text:
+            txtPassword_Login As text:
                 Default: =""
                 HintText: ="Password"
                 Size: =
@@ -33,7 +33,7 @@
         Height: =64
         OnSelect: |
             =If(
-                IsBlank(TextInput3.Text) || IsBlank(TextInput4.Text),
+                IsBlank(txtUsername_Login.Text) || IsBlank(txtPassword_Login.Text),
                 Notify("Please enter both username and password.", NotificationType.Error),
                 If(
                     CountRows(Filter(Table1, Username = username.Text, Password = password.Text)) = 1,
