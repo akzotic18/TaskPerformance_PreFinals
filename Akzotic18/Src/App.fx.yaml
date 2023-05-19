@@ -6,7 +6,7 @@ App As appinfo:
                 {Value:"Main Page", Icon: Icon.Newspaper, Screen:MainScreen},
                 {Value:"Create", Icon: Icon.Add, Screen:'AccountCreation Screen'},
                 {Value:"Password", Icon: Icon.Key, Screen:'PasswordUpdate Screen'},
-                {Value:"Info", Icon: Icon.Money, Screen:'ProfileInfoUpdate Screen'},
+                {Value:"Info", Icon: Icon.View, Screen:'ProfileInfoUpdate Screen'},
                 {Value:"About", Icon: Icon.Information, Screen:'AboutUs Screen'},
                 {Value:"Log out", Icon: Icon.Leave, Screen:'LogOut Screen'}
             )
