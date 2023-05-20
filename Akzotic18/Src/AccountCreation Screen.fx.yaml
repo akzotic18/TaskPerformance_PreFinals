@@ -1,170 +1,184 @@
 "'AccountCreation Screen' As screen":
     Fill: =RGBA(255, 255, 255, 1)
 
-    cmp_SideNav_2 As cmp_SideNav:
-        Default: ="Create"
-        Height: =768
-        Items: =colSideBarMenu
+    AccCreationMainContainer As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =14
 
-    Label1 As label:
-        Font: =Font.Georgia
-        FontWeight: =FontWeight.Semibold
-        Height: =57
-        Size: =20
-        Text: ="Username"
-        Width: =235
-        X: =752
-        Y: =272
-        ZIndex: =2
+        AccCreationNavContainer As groupContainer.manualLayoutContainer:
+            Height: =AccCreationMainContainer.Height
+            Width: =80
+            ZIndex: =1
 
-    username As text:
-        Default: =""
-        Font: =Font.Lato
-        Height: =62
-        HintText: =" "
-        RadiusBottomLeft: =15
-        RadiusBottomRight: =15
-        RadiusTopLeft: =15
-        RadiusTopRight: =15
-        Size: =15
-        Width: =475
-        X: =752
-        Y: =329
-        ZIndex: =3
+            cmp_SideNav_2 As cmp_SideNav:
+                Default: ="Create"
+                Height: =AccCreationNavContainer.Height
+                Items: =colSideBarMenu
 
-    Label2 As label:
-        Font: =Font.Georgia
-        FontWeight: =FontWeight.Semibold
-        Height: =57
-        Size: =20
-        Text: ="Email"
-        Width: =185
-        X: =189
-        Y: =272
-        ZIndex: =4
+        AccCreationContentContainer As groupContainer.verticalAutoLayoutContainer:
+            Height: =AccCreationMainContainer.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =AccCreationMainContainer.Height / 70
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            Width: =AccCreationMainContainer.Width - AccCreationNavContainer.Width
+            X: =80
+            ZIndex: =2
 
-    email As text:
-        Default: =""
-        Font: =Font.Lato
-        Height: =62
-        HintText: =""
-        RadiusBottomLeft: =15
-        RadiusBottomRight: =15
-        RadiusTopLeft: =15
-        RadiusTopRight: =15
-        Size: =15
-        Width: =468
-        X: =189
-        Y: =329
-        ZIndex: =5
+            Label7 As label:
+                Align: =Align.Center
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Size: =AccCreationContentContainer.Width/55
+                Text: ="CREATE ACCOUNT"
+                Width: =AccCreationContentContainer.Width
+                X: =340
+                Y: =46
+                ZIndex: =1
 
-    Label3 As label:
-        Font: =Font.Georgia
-        FontWeight: =FontWeight.Semibold
-        Height: =62
-        Size: =20
-        Text: ="Password"
-        Width: =202
-        X: =189
-        Y: =412
-        ZIndex: =6
+            Label1 As label:
+                Align: =Align.Center
+                Font: =Font.Georgia
+                Size: =AccCreationContentContainer.Width/55
+                Text: ="Username"
+                Width: =AccCreationContentContainer.Width
+                X: =563
+                Y: =226
+                ZIndex: =2
 
-    password As text:
-        Default: =""
-        Font: =Font.Lato
-        Height: =55
-        HintText: =""
-        RadiusBottomLeft: =15
-        RadiusBottomRight: =15
-        RadiusTopLeft: =15
-        RadiusTopRight: =15
-        Size: =15
-        Width: =462
-        X: =195
-        Y: =474
-        ZIndex: =7
+            username As text:
+                Default: =""
+                Font: =Font.Lato
+                HintText: =" "
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =15
+                Width: =AccCreationContentContainer.Width / 3
+                X: =563
+                Y: =283
+                ZIndex: =3
 
-    Button1 As button:
-        Color: =RGBA(0, 0, 0, 1)
-        Height: =60
-        OnSelect: |-
-            =If(
-                IsBlank(firstname.Text) || IsBlank(lastname.Text) || IsBlank(email.Text) || IsBlank(username.Text) || IsBlank(password.Text),
-                Notify("Please fill in all the fields.", NotificationType.Error),
-                If(
-                    CountRows(Filter(Table1, Username = username.Text)) > 0,
-                    Notify("Username already exists. Please choose a different username.", NotificationType.Error),
-                    Patch(Table1, Defaults(Table1), {Firstname: firstname.Text, Lastname: lastname.Text, Username: username.Text, Email: email.Text, Password: password.Text})
-                )
-            )
-        RadiusBottomLeft: =15
-        RadiusBottomRight: =15
-        RadiusTopLeft: =15
-        RadiusTopRight: =15
-        Size: =30
-        Text: ="Create Account"
-        Width: =345
-        X: =566
-        Y: =580
-        ZIndex: =8
+            Label2 As label:
+                Align: =Align.Center
+                Font: =Font.Georgia
+                Size: =AccCreationContentContainer.Width/55
+                Text: ="Email"
+                Width: =AccCreationContentContainer.Width
+                X: =189
+                Y: =226
+                ZIndex: =4
 
-    Label7 As label:
-        Font: =Font.Georgia
-        FontWeight: =FontWeight.Semibold
-        Height: =65
-        Size: =30
-        Text: ="Create Account"
-        Width: =355
-        X: =529
-        Y: =46
-        ZIndex: =9
+            email As text:
+                Default: =""
+                Font: =Font.Lato
+                HintText: =""
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =15
+                Width: =AccCreationContentContainer.Width / 3
+                X: =189
+                Y: =283
+                ZIndex: =5
 
-    Label8 As label:
-        Font: =Font.Georgia
-        FontWeight: =FontWeight.Semibold
-        Height: =52
-        Size: =20
-        Text: ="First Name"
-        Width: =200
-        X: =189
-        Y: =135
-        ZIndex: =10
+            Label3 As label:
+                Align: =Align.Center
+                Font: =Font.Georgia
+                Size: =AccCreationContentContainer.Width/55
+                Text: ="Password"
+                Width: =AccCreationContentContainer.Width
+                X: =189
+                Y: =366
+                ZIndex: =6
 
-    firstname As text:
-        Default: =""
-        Font: =Font.Lato
-        Height: =52
-        RadiusBottomLeft: =15
-        RadiusBottomRight: =15
-        RadiusTopLeft: =15
-        RadiusTopRight: =15
-        Size: =15
-        Width: =468
-        X: =189
-        Y: =202
-        ZIndex: =11
+            password As text:
+                Default: =""
+                Font: =Font.Lato
+                HintText: =""
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =15
+                Width: =AccCreationContentContainer.Width / 3
+                X: =6
+                Y: =428
+                ZIndex: =7
 
-    Label9 As label:
-        Font: =Font.Georgia
-        FontWeight: =FontWeight.Semibold
-        Size: =20
-        Text: ="Last Name"
-        Width: =200
-        X: =752
-        Y: =147
-        ZIndex: =12
+            Label8 As label:
+                Align: =Align.Center
+                Font: =Font.Georgia
+                Size: =AccCreationContentContainer.Width/55
+                Text: ="First Name"
+                Width: =AccCreationContentContainer.Width
+                X: =189
+                Y: =89
+                ZIndex: =8
 
-    lastname As text:
-        Default: =""
-        Font: =Font.Lato
-        Height: =52
-        RadiusBottomLeft: =15
-        RadiusBottomRight: =15
-        RadiusTopLeft: =15
-        RadiusTopRight: =15
-        Size: =15
-        Width: =475
-        X: =752
-        Y: =202
-        ZIndex: =13
+            firstname As text:
+                Default: =""
+                Font: =Font.Lato
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =15
+                Width: =AccCreationContentContainer.Width / 3
+                X: =189
+                Y: =156
+                ZIndex: =9
+
+            Label9 As label:
+                Align: =Align.Center
+                Font: =Font.Georgia
+                Size: =AccCreationContentContainer.Width/55
+                Text: ="Last Name"
+                Width: =AccCreationContentContainer.Width
+                X: =563
+                Y: =101
+                ZIndex: =10
+
+            lastname As text:
+                Default: =""
+                Font: =Font.Lato
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =15
+                Width: =AccCreationContentContainer.Width / 3
+                X: =563
+                Y: =156
+                ZIndex: =11
+
+            Button1 As button:
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =lastname.Height + 15
+                OnSelect: |-
+                    =If(
+                        IsBlank(firstname.Text) || IsBlank(lastname.Text) || IsBlank(email.Text) || IsBlank(username.Text) || IsBlank(password.Text),
+                        Notify("Please fill in all the fields.", NotificationType.Error),
+                        If(
+                            CountRows(Filter(Table1, Username = username.Text)) > 0,
+                            Notify("Username already exists. Please choose a different username.", NotificationType.Error),
+                            Patch(Table1, Defaults(Table1), {Firstname: firstname.Text, Lastname: lastname.Text, Username: username.Text, Email: email.Text, Password: password.Text})
+                        )
+                    )
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =AccCreationContentContainer.Width/55
+                Text: ="Create Account"
+                Width: =AccCreationContentContainer.Width / 5
+                X: =377
+                Y: =534
+                ZIndex: =12
 
