@@ -606,6 +606,66 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -826,19 +886,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'PasswordUpdate Screen'.currentpass.AccessibleLabel"
+                  "fullyQualifiedName": "'PasswordUpdate Screen'.PasswordUpdateMainContainer.PasswordUpdateContentContainer.currentpass.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'PasswordUpdate Screen'.currentpass.AccessibleLabel",
+                  "fullyQualifiedName": "'PasswordUpdate Screen'.PasswordUpdateMainContainer.PasswordUpdateContentContainer.currentpass.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PasswordUpdate Screen",
-                "type": "'PasswordUpdate Screen'.currentpass"
+                "type": "'PasswordUpdate Screen'.PasswordUpdateMainContainer.PasswordUpdateContentContainer.currentpass"
               }
             }
           ],
@@ -856,19 +916,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'PasswordUpdate Screen'.newpass.AccessibleLabel"
+                  "fullyQualifiedName": "'PasswordUpdate Screen'.PasswordUpdateMainContainer.PasswordUpdateContentContainer.newpass.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'PasswordUpdate Screen'.newpass.AccessibleLabel",
+                  "fullyQualifiedName": "'PasswordUpdate Screen'.PasswordUpdateMainContainer.PasswordUpdateContentContainer.newpass.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PasswordUpdate Screen",
-                "type": "'PasswordUpdate Screen'.newpass"
+                "type": "'PasswordUpdate Screen'.PasswordUpdateMainContainer.PasswordUpdateContentContainer.newpass"
               }
             }
           ],
@@ -886,19 +946,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'PasswordUpdate Screen'.confirmpass.AccessibleLabel"
+                  "fullyQualifiedName": "'PasswordUpdate Screen'.PasswordUpdateMainContainer.PasswordUpdateContentContainer.confirmpass.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'PasswordUpdate Screen'.confirmpass.AccessibleLabel",
+                  "fullyQualifiedName": "'PasswordUpdate Screen'.PasswordUpdateMainContainer.PasswordUpdateContentContainer.confirmpass.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PasswordUpdate Screen",
-                "type": "'PasswordUpdate Screen'.confirmpass"
+                "type": "'PasswordUpdate Screen'.PasswordUpdateMainContainer.PasswordUpdateContentContainer.confirmpass"
               }
             }
           ],
@@ -1030,6 +1090,66 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'LogOut Screen'.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'LogOut Screen'.Icon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "LogOut Screen",
+                "type": "'LogOut Screen'.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'LogOut Screen'.Icon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'LogOut Screen'.Icon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "LogOut Screen",
+                "type": "'LogOut Screen'.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         }
       ],
       "tool": {

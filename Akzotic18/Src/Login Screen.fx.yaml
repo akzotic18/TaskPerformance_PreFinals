@@ -1,22 +1,15 @@
 "'Login Screen' As screen":
 
     LoginContainer As groupContainer.verticalAutoLayoutContainer:
-        Height: =Parent.Height
+        Height: =666
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutDirection: =LayoutDirection.Vertical
         LayoutGap: =35
         LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
+        Y: =100
         ZIndex: =5
-
-        Label12 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Size: =LoginContainer.Width/55
-            Text: ="WELCOME PLEASE LOGIN"
-            Width: =LoginContainer.Width
-            ZIndex: =1
 
         lblUsername As label:
             Align: =Align.Center
@@ -44,6 +37,7 @@
         txtPassword_Login As text:
             Default: =""
             HintText: ="Password"
+            Mode: =TextMode.Password
             Size: =
             Width: =LoginContainer.Width / 3
             X: =411
@@ -77,4 +71,19 @@
             X: =266
             Y: =284
             ZIndex: =6
+
+    HeaderContainer As groupContainer.manualLayoutContainer:
+        Height: =100
+        Width: =Parent.Width
+        ZIndex: =6
+
+        Label12 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =HeaderContainer.Height/1.5
+            Size: =HeaderContainer.Width/35
+            Text: ="LOGIN"
+            Width: =LoginContainer.Width
+            Y: =16
+            ZIndex: =1
 

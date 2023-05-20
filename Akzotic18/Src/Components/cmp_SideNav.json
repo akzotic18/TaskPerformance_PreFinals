@@ -34,7 +34,7 @@
             "Name": "galleryTemplate1_1",
             "Parent": "Gallery1_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 36,
+            "PublishOrderIndex": 40,
             "Rules": [
               {
                 "Category": "Design",
@@ -159,7 +159,7 @@
             "Name": "lblCurrent",
             "Parent": "Gallery1_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 37,
+            "PublishOrderIndex": 41,
             "Rules": [
               {
                 "Category": "Data",
@@ -517,7 +517,7 @@
             "Name": "lblOverlay",
             "Parent": "Gallery1_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 38,
+            "PublishOrderIndex": 42,
             "Rules": [
               {
                 "Category": "Data",
@@ -860,7 +860,7 @@
             "Name": "icnSideNav",
             "Parent": "Gallery1_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 39,
+            "PublishOrderIndex": 43,
             "Rules": [
               {
                 "Category": "Design",
@@ -1116,7 +1116,7 @@
             "Name": "lblValue",
             "Parent": "Gallery1_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 40,
+            "PublishOrderIndex": 44,
             "Rules": [
               {
                 "Category": "Data",
@@ -1459,7 +1459,7 @@
         "Name": "Gallery1_1",
         "Parent": "cmp_SideNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 35,
+        "PublishOrderIndex": 39,
         "Rules": [
           {
             "Category": "Data",
