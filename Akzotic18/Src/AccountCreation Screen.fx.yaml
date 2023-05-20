@@ -168,16 +168,12 @@
                         Notify("Please fill in all the fields.", NotificationType.Error),
                         If(
                             CountRows(Filter(Table1, Username = username.Text)) > 0,
-                            Notify("Username already exists. Please choose a different username.", NotificationType.Error),
-                            Patch(Table1, Defaults(Table1), {Firstname: firstname.Text, Lastname: lastname.Text, Username: username.Text, Email: email.Text, Password: password.Text})
-                            
+                            Notify("Username already exists. Please choose a different username.", NotificationType.Error), 
+                            NewAccountNotify.Run();
+                            Patch(Table1, Defaults(Table1), {Firstname: firstname.Text, Lastname: lastname.Text, Username: username.Text, Email: email.Text, Password: password.Text})  
                         );
                     
-                        If(
-                            Not(CountRows(Filter(Table1, Username = username.Text)) > 0),
-                            NewAccountNotify.Run()
-                        );
-                    
+                        
                     );
                     
                 RadiusBottomLeft: =15
