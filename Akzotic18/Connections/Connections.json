@@ -34,6 +34,34 @@
     "dependents": [],
     "id": "65900a3d-ea04-4b72-bd35-d676b25a119f"
   },
+  "8082b891-5bfb-4a5a-8ed9-1ee2d45d22ec": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/logicflows-specialbuild/1.0.1633.3284/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c0ce5a4a-ee11-4b34-b422-6954d45210c8"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c0ce5a4a-ee11-4b34-b422-6954d45210c8"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "NewAccountNotify"
+    ],
+    "dependencies": {
+      "shared_teams": "f92c6550-5c49-487d-bd96-a57a79646ee5"
+    },
+    "dependents": [],
+    "id": "8082b891-5bfb-4a5a-8ed9-1ee2d45d22ec"
+  },
   "e2afe2a2-ce86-45a3-9e74-3d8c61ad2dfc": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -50,5 +78,19 @@
       "65900a3d-ea04-4b72-bd35-d676b25a119f"
     ],
     "id": "e2afe2a2-ce86-45a3-9e74-3d8c61ad2dfc"
+  },
+  "f92c6550-5c49-487d-bd96-a57a79646ee5": {
+    "connectionRef": {
+      "displayName": "Microsoft Teams",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/teams/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_teams"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "8082b891-5bfb-4a5a-8ed9-1ee2d45d22ec"
+    ],
+    "id": "f92c6550-5c49-487d-bd96-a57a79646ee5"
   }
 }

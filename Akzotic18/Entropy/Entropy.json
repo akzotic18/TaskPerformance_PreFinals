@@ -69,11 +69,13 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/20/2023 10:27:04",
+  "HeaderLastSavedDateTimeUTC": "05/20/2023 10:29:07",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "65900a3d-ea04-4b72-bd35-d676b25a119f": "\"/providers/microsoft.powerapps/apis/shared_excel/connections/2936f4c43d884965a5eb7e126942440e\"",
-    "e2afe2a2-ce86-45a3-9e74-3d8c61ad2dfc": "\"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/2c7a826c30ec405caafda4b467881e42\""
+    "8082b891-5bfb-4a5a-8ed9-1ee2d45d22ec": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/C0CE5A4AEE114B34B4226954D45210C8-F91FA2A154B13745\"",
+    "e2afe2a2-ce86-45a3-9e74-3d8c61ad2dfc": "\"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/2c7a826c30ec405caafda4b467881e42\"",
+    "f92c6550-5c49-487d-bd96-a57a79646ee5": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/shared-teams-daf3d8a9-0979-4dec-b69e-a52a0fb40f55\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
@@ -85,8 +87,9 @@
     "c09499c4771544f3b71e7441f5ec53a8": 0
   },
   "OrderDataSource": {
-    "CustomGallerySample": 0,
-    "Table1": 1
+    "CustomGallerySample": 1,
+    "NewAccountNotify": 0,
+    "Table1": 2
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
