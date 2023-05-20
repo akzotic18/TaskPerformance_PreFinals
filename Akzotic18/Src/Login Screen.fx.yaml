@@ -10,40 +10,49 @@
         Width: =Parent.Width
         ZIndex: =5
 
-        lblUsername As label:
+        Label12 As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
             Size: =LoginContainer.Width/55
-            Text: ="Username"
+            Text: ="WELCOME PLEASE LOGIN"
             Width: =LoginContainer.Width
             ZIndex: =1
+
+        lblUsername As label:
+            Align: =Align.Center
+            Size: =LoginContainer.Width/55
+            Text: ="Username"
+            Width: =LoginContainer.Width
+            ZIndex: =2
 
         txtUsername_Login As text:
             Default: =
             HintText: ="Username"
             Size: =
+            Width: =LoginContainer.Width / 3
             X: =328
             Y: =251
-            ZIndex: =2
+            ZIndex: =3
 
         lblPassword As label:
             Align: =Align.Center
-            FontWeight: =FontWeight.Bold
+            Size: =LoginContainer.Width/55
             Text: ="Password"
             Width: =LoginContainer.Width
-            ZIndex: =3
+            ZIndex: =4
 
         txtPassword_Login As text:
             Default: =""
             HintText: ="Password"
             Size: =
+            Width: =LoginContainer.Width / 3
             X: =411
             Y: =251
-            ZIndex: =4
+            ZIndex: =5
 
         btnLogin As button:
             Font: =Font.'Lato Black'
-            Height: =64
+            Height: =txtPassword_Login.Height + 15
             OnSelect: |
                 =If(
                     IsBlank(txtUsername_Login.Text) || IsBlank(txtPassword_Login.Text),
@@ -62,10 +71,10 @@
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
-            Size: =30
+            Size: =LoginContainer.Width/55
             Text: ="Login"
-            Width: =177
+            Width: =LoginContainer.Width / 5
             X: =266
             Y: =284
-            ZIndex: =5
+            ZIndex: =6
 
