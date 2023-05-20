@@ -1,58 +1,70 @@
 "'Login Screen' As screen":
 
-    Container2 As groupContainer.manualLayoutContainer:
+    LoginContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =35
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
-        ZIndex: =1
+        ZIndex: =5
 
-        Container4 As groupContainer.horizontalAutoLayoutContainer:
-            Height: =461
-            LayoutAlignItems: =LayoutAlignItems.Center
-            LayoutGap: =50
-            LayoutJustifyContent: =LayoutJustifyContent.Center
-            LayoutMode: =LayoutMode.Auto
-            Width: =1366
-            X: =Parent.X
-            Y: =60
+        lblUsername As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Text: ="Username"
+            Width: =LoginContainer.Width
             ZIndex: =1
 
-            txtUsername_Login As text:
-                Default: =
-                HintText: ="Username"
-                Size: =
-                ZIndex: =1
+        txtUsername_Login As text:
+            Default: =
+            HintText: ="Username"
+            Size: =
+            X: =328
+            Y: =251
+            ZIndex: =2
 
-            txtPassword_Login As text:
-                Default: =""
-                HintText: ="Password"
-                Size: =
-                ZIndex: =2
+        lblPassword As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Text: ="Password"
+            Width: =LoginContainer.Width
+            ZIndex: =3
 
-    Button8 As button:
-        Font: =Font.'Lato Black'
-        Height: =64
-        OnSelect: |
-            =If(
-                IsBlank(txtUsername_Login.Text) || IsBlank(txtPassword_Login.Text),
-                Notify("Please enter both username and password.", NotificationType.Error),
-                If(
-                    CountRows(Filter(Table1, Username = username.Text, Password = password.Text)) = 1,
-                    Navigate(MainScreen),
+        txtPassword_Login As text:
+            Default: =""
+            HintText: ="Password"
+            Size: =
+            X: =411
+            Y: =251
+            ZIndex: =4
+
+        btnLogin As button:
+            Font: =Font.'Lato Black'
+            Height: =64
+            OnSelect: |
+                =If(
+                    IsBlank(txtUsername_Login.Text) || IsBlank(txtPassword_Login.Text),
+                    Notify("Please enter both username and password.", NotificationType.Error),
                     If(
                         CountRows(Filter(Table1, Username = username.Text, Password = password.Text)) = 1,
                         Navigate(MainScreen),
-                        Notify("Invalid username or password.", NotificationType.Error)
+                        If(
+                            CountRows(Filter(Table1, Username = username.Text, Password = password.Text)) = 1,
+                            Navigate(MainScreen),
+                            Notify("Invalid username or password.", NotificationType.Error)
+                        )
                     )
                 )
-            )
-        RadiusBottomLeft: =15
-        RadiusBottomRight: =15
-        RadiusTopLeft: =15
-        RadiusTopRight: =15
-        Size: =30
-        Text: ="Login"
-        Width: =177
-        X: =594
-        Y: =535
-        ZIndex: =2
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =30
+            Text: ="Login"
+            Width: =177
+            X: =266
+            Y: =284
+            ZIndex: =5
 
