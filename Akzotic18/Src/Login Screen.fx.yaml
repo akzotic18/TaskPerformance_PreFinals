@@ -13,6 +13,7 @@
         lblUsername As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
+            Size: =LoginContainer.Width/55
             Text: ="Username"
             Width: =LoginContainer.Width
             ZIndex: =1
