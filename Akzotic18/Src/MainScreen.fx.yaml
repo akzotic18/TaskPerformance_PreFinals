@@ -1,7 +1,35 @@
 MainScreen As screen:
 
-    cmp_SideNav_1 As cmp_SideNav:
-        Default: ="Main Page"
-        Height: =768
-        Items: =colSideBarMenu
+    MainScreenMainContainer As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =2
+
+        MainScreenNavContainer As groupContainer.manualLayoutContainer:
+            Height: =MainScreenMainContainer.Height
+            Width: =80
+            ZIndex: =1
+
+            cmp_SideNav_1 As cmp_SideNav:
+                Default: ="Main Page"
+                Height: =768
+                Items: =colSideBarMenu
+
+        Container2 As groupContainer.verticalAutoLayoutContainer:
+            Height: =MainScreenMainContainer.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            Width: =MainScreenMainContainer.Width - MainScreenNavContainer.Width
+            X: =80
+            ZIndex: =2
+
+            lblWelcome As label:
+                Align: =Align.Center
+                AlignInContainer: =AlignInContainer.Stretch
+                FillPortions: =1
+                Font: =Font.'Courier New'
+                Overflow: =Overflow.Scroll
+                Size: =MainScreenMainContainer.Height / 12
+                Text: ="Welcome to Sleek Solutions, the current screen size is " & lblWelcome.Width & "x" & lblWelcome.Height
+                ZIndex: =1
 

@@ -40,12 +40,18 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/logicflows-specialbuild/1.0.1633.3284/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "f92c6550-5c49-487d-bd96-a57a79646ee5": {
+          "value": "shared_teams"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c0ce5a4a-ee11-4b34-b422-6954d45210c8"
         }
       },
       "parameterHintsV2": {
+        "shared_teams": {
+          "value": "f92c6550-5c49-487d-bd96-a57a79646ee5"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c0ce5a4a-ee11-4b34-b422-6954d45210c8"

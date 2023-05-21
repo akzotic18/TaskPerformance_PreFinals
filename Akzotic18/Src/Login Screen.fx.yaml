@@ -82,7 +82,7 @@
             FontWeight: =FontWeight.Bold
             Height: =HeaderContainer.Height/1.5
             Size: =HeaderContainer.Width/35
-            Text: ="LOGIN"
+            Text: ="Sleek Solutions"
             Width: =LoginContainer.Width
             Y: =16
             ZIndex: =1
