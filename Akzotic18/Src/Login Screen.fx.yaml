@@ -52,10 +52,10 @@
                     IsBlank(txtUsername_Login.Text) || IsBlank(txtPassword_Login.Text),
                     Notify("Please enter both username and password.", NotificationType.Error),
                     If(
-                        CountRows(Filter(Table1, Username = username.Text, Password = password.Text)) = 1,
+                        CountRows(Filter(Table1, Username = txtUsername_Login.Text, Password = txtPassword_Login.Text)) = 1,
                         Navigate(MainScreen),
                         If(
-                            CountRows(Filter(Table1, Username = username.Text, Password = password.Text)) = 1,
+                            CountRows(Filter(Table1, Username = txtUsername_Login.Text, Password = txtPassword_Login.Text)) = 1,
                             Navigate(MainScreen),
                             Notify("Invalid username or password.", NotificationType.Error)
                         )
