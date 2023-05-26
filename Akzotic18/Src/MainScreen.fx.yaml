@@ -28,6 +28,7 @@ MainScreen As screen:
                 AlignInContainer: =AlignInContainer.Stretch
                 FillPortions: =1
                 Font: =Font.'Courier New'
+                FontWeight: =FontWeight.Bold
                 Overflow: =Overflow.Scroll
                 Size: =MainScreenMainContainer.Height / 12
                 Text: ="Welcome to Sleek Solutions, the current screen size is " & lblWelcome.Width & "x" & lblWelcome.Height

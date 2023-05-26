@@ -12,7 +12,7 @@
         OnSelect: =Navigate('Login Screen')
         Rotation: =180
         Width: =408
-        X: =512
+        X: =510
         Y: =194
         ZIndex: =2
 
